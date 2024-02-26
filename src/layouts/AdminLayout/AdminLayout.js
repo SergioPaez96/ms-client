@@ -1,5 +1,7 @@
 import React from "react";
 import { AdminMenu } from "../../components/Admin/AdminLayout";
+import { Icon } from "../../assets";
+import "./AdminLayout.scss";
 
 export function AdminLayout(props) {
 	const { children } = props;
@@ -7,7 +9,7 @@ export function AdminLayout(props) {
 		<div className="admin-layout">
 			<div className="admin-layout__left">
 				<div>
-					<h3>Logo</h3>
+					<Icon.MSLogo className="logo" />
 				</div>
 				<AdminMenu />
 			</div>

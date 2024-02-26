@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { AdminLayout } from "../layouts";
-import { Auth } from "../pages/admin";
+import { Auth, Blog, Menu, Newsletter } from "../pages/admin";
 
 export function AdminRouter() {
 	// const { user } = useAuth();
@@ -19,29 +19,29 @@ export function AdminRouter() {
 				element={<Auth />}
 			/>
 			<>
-				{/* {["/admin", "/admin/blog"].map((path) => (
-						<Route
-							key={path}
-							path={path}
-							element={loadLayout(AdminLayout, Blog)}
-						/>
-					))}
+				{["/admin", "/admin/blog"].map((path) => (
 					<Route
+						key={path}
+						path={path}
+						element={loadLayout(AdminLayout, Blog)}
+					/>
+				))}
+				{/* <Route
 						path="/admin/users"
 						element={loadLayout(AdminLayout, Users)}
 					/>
 					<Route
 						path="/admin/courses"
-						element={loadLayout(AdminLayout, Courses)}
-					/>
-					<Route
-						path="/admin/menu"
-						element={loadLayout(AdminLayout, Menu)}
-					/>
-					<Route
-						path="/admin/newsletter"
-						element={loadLayout(AdminLayout, Newsletter)}
-					/> */}
+				/>
+						element={loadLayout(AdminLayout, Courses)} */}
+				<Route
+					path="/admin/menu"
+					element={loadLayout(AdminLayout, Menu)}
+				/>
+				<Route
+					path="/admin/newsletter"
+					element={loadLayout(AdminLayout, Newsletter)}
+				/>
 			</>
 		</Routes>
 	);
