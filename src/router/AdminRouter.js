@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { AdminLayout } from "../layouts";
-import { Auth, Blog, Menu, Newsletter } from "../pages/admin";
+import { Auth, Blog, Menu, Newsletter, Products } from "../pages/admin";
 
 export function AdminRouter() {
 	// const { user } = useAuth();
@@ -37,6 +37,10 @@ export function AdminRouter() {
 				<Route
 					path="/admin/menu"
 					element={loadLayout(AdminLayout, Menu)}
+				/>
+				<Route
+					path="/admin/products"
+					element={loadLayout(AdminLayout, Products)}
 				/>
 				<Route
 					path="/admin/newsletter"
