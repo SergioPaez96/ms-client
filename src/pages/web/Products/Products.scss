@@ -1,0 +1,40 @@
+@import "~/src/scss/index.scss";
+
+.products-page {
+	> .ui.image {
+		width: 100px;
+		margin: 0 auto;
+		margin-top: 50px;
+	}
+
+	// > img.ui.image {
+	// 	height: 291px;
+	// 	object-fit: cover;
+	// }
+
+	> h1 {
+		font-size: 16px;
+		text-align: center;
+		font-weight: 100;
+		color: $text-light;
+		opacity: 0.6;
+	}
+
+	.products {
+		display: flex;
+		flex-wrap: wrap;
+
+		&__item {
+			width: 33.33%;
+		}
+	}
+
+	.more-products {
+		text-align: center;
+
+		.ui.button {
+			margin: 0;
+			margin-top: 30px;
+		}
+	}
+}

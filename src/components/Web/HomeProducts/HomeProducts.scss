@@ -1,0 +1,71 @@
+@import "~/src/scss/index.scss";
+
+.home-products {
+	//background-color: white;
+	> h2 {
+		text-align: center;
+		font-family: "Helvetica Neue";
+		font-size: 32px;
+		text-transform: uppercase;
+		color: white;
+		margin: 50px 0 30px 0 !important;
+	}
+
+	&__all-products {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+
+		> a {
+			width: 33.33%;
+			display: flex;
+			padding: 10px;
+			flex-direction: column;
+			align-items: center;
+
+			&:hover {
+				opacity: 0.6;
+			}
+
+			.ui.image {
+				height: 250px;
+			}
+
+			> div {
+				display: flex;
+				flex-direction: column;
+				padding: 0 10px;
+
+				> span {
+					color: white;
+
+					&:first-of-type {
+						font-weight: bold;
+						font-size: 16px;
+					}
+
+					&:last-of-type {
+						opacity: 0.4;
+						font-size: 12px;
+						padding-top: 6px;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						display: -webkit-box;
+						-webkit-box-orient: vertical;
+						-webkit-line-clamp: 2;
+					}
+				}
+			}
+		}
+	}
+
+	&__more {
+		display: flex;
+		justify-content: center;
+		padding: 20px 0;
+
+		.ui.button {
+			width: 200px;
+		}
+	}
+}
