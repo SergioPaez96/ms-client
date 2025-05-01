@@ -7,25 +7,25 @@
 		margin-top: 50px;
 	}
 
-	// > img.ui.image {
-	// 	height: 291px;
-	// 	object-fit: cover;
-	// }
+	> img.ui.image {
+		object-fit: cover;
+	}
 
 	> h1 {
+		margin-top: 10px !important;
 		font-size: 16px;
 		text-align: center;
 		font-weight: 100;
-		color: $text-light;
-		opacity: 0.6;
+		color: $text-color-footer;
 	}
 
 	.products {
+		margin-top: 50px;
 		display: flex;
 		flex-wrap: wrap;
 
 		&__item {
-			width: 33.33%;
+			width: 24.75%;
 		}
 	}
 
@@ -35,6 +35,12 @@
 		.ui.button {
 			margin: 0;
 			margin-top: 30px;
+		}
+	}
+
+	@media screen and (max-width: 760px) {
+		&__item {
+			width: 49.99% !important;
 		}
 	}
 }

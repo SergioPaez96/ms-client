@@ -29,6 +29,7 @@ export function Products() {
 
 				if (!products) setProducts(response.docs);
 				else setProducts([...products, ...response.docs]);
+				console.log(response.docs);
 			} catch (error) {
 				console.error(error);
 			}
@@ -42,7 +43,6 @@ export function Products() {
 
 	return (
 		<Container className="products-page">
-			<h1>Éstos son algunos de nuestros productos</h1>
 			<div className="products">
 				{map(products, (product) => (
 					<div key={product._id} className="products__item">

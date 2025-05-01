@@ -51,6 +51,23 @@ export class Product {
 		}
 	}
 
+	async getProduct(idProduct) {
+		try {
+			const url = `${this.baseApi}/${ENV.API_ROUTES.PRODUCT_ID}/${idProduct}`;
+			const params = {
+				method: "GET",
+			};
+			const response = await fetch(url, params);
+			const result = await response.json();
+
+			if (response.status !== 200) throw result;
+
+			return result;
+		} catch (error) {
+			throw error;
+		}
+	}
+
 	async updateProduct(accessToken, idProduct, data) {
 		try {
 			const formData = new FormData();

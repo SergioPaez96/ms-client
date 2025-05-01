@@ -21,7 +21,7 @@ export function ClientLayout(props) {
 				</Container>
 				<Container>
 					<span>DERECHOS RESERVADOS</span>
-					<span>SERGIO PAEZ || FRONTEND DEVELOPER</span>
+					<span>SERGIO PAEZ || DEVELOPER</span>
 				</Container>
 			</div>
 		</div>

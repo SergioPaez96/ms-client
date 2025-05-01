@@ -9,6 +9,15 @@
 		margin-bottom: 20px;
 	}
 
+	.ui.primary.button {
+		background-color: rgb(81 16 134 / 75%) !important;
+		width: 200px;
+
+		&:hover {
+			opacity: 0.7 !important;
+		}
+	}
+
 	.success {
 		color: $success;
 		text-align: center;

@@ -28,7 +28,7 @@
 			}
 
 			.ui.image {
-				height: 250px;
+				height: 200px;
 			}
 
 			> div {
@@ -53,6 +53,7 @@
 						display: -webkit-box;
 						-webkit-box-orient: vertical;
 						-webkit-line-clamp: 2;
+						line-clamp: 2;
 					}
 				}
 			}
@@ -64,8 +65,13 @@
 		justify-content: center;
 		padding: 20px 0;
 
-		.ui.button {
+		.ui.primary.button {
+			background-color: rgb(81 16 134 / 75%) !important;
 			width: 200px;
+
+			&:hover {
+				opacity: 0.7 !important;
+			}
 		}
 	}
 }

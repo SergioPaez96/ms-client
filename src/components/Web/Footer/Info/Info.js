@@ -11,13 +11,9 @@ export function Info() {
 	return (
 		<div className="footer-info">
 			<Icon.MSLogo className="logo" />
-			<p>
-				Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi odio
-				iusto eum commodi voluptate praesentium ut. Natus eum fuga deserunt
-				veritatis dicta, iusto aperiam libero, nemo saepe assumenda culpa nam.
-			</p>
+			<p>Los mejores productos de mayor calidad y buen precio.</p>
 
-			{map(socialData, (social) => (
+			{/* {map(socialData, (social) => (
 				<Button
 					key={social.type}
 					as="a"
@@ -26,7 +22,7 @@ export function Info() {
 					color={social.type}
 					icon={social.type}
 				/>
-			))}
+			))} */}
 		</div>
 	);
 }

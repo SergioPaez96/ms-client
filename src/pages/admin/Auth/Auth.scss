@@ -8,11 +8,10 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	padding-top: 100px;
 
 	.logo {
 		width: 200px;
-		margin-bottom: 30px;
+		height: 200px;
 	}
 
 	&__forms {

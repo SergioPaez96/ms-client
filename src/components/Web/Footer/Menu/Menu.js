@@ -7,26 +7,27 @@ import "./Menu.scss";
 export function Menu() {
 	return (
 		<div className="footer-menu">
-			<h4>Navegación</h4>
+			<h4>Productos y Servicios</h4>
 
-			<Grid columns={2}>
+			<Grid>
 				<Grid.Column>
 					<Link to="#">
-						<Icon name="book" /> Productos
+						<Icon name="tint" /> Sublimación y DTF
 					</Link>
 					<Link to="#">
-						<Icon name="code" /> Blog
-					</Link>
-				</Grid.Column>
-				<Grid.Column>
-					<Link to="#">
-						<Icon name="server" /> Sistemas / Servidores
+						<Icon name="print" /> Servicios de impresión
 					</Link>
 					<Link to="#">
-						<Icon name="cogs" /> CMS
+						<Icon name="crosshairs" /> Servicios de diseño
 					</Link>
 				</Grid.Column>
 			</Grid>
 		</div>
 	);
+}
+
+{
+	/* <Link to="#">
+	<Icon name="code" /> Blog
+</Link> */
 }

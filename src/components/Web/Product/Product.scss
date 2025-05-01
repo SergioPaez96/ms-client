@@ -1,8 +1,15 @@
 @import "~/src/scss/index.scss";
 
 .product {
+	display: flex;
+	flex-direction: column;
 	margin: 10px;
 	box-shadow: 0 0 5px 0px rgb(0 0 0 / 30%);
+
+	img.ui.image {
+		object-fit: cover;
+		min-height: 211px;
+	}
 
 	&:hover {
 		box-shadow: 0 0 10px 2px rgb(0 0 0 / 75%);
@@ -31,7 +38,8 @@
 		}
 
 		.ui.button {
-			font-size: 12px;
+			background-color: rgba(81, 16, 134, 0.75) !important;
+			font-size: 10px;
 
 			> i.icon {
 				margin-left: 5px !important;
@@ -49,4 +57,26 @@
 			}
 		}
 	}
+
+	@media screen and (max-width: 760px) {
+		.product__info-footer__price {
+			font-size: 8px !important;
+		}
+
+		> h3 {
+			font-size: 10px !important;
+		}
+
+		> p {
+			font-size: 8px !important;
+		}
+
+		.ui.button {
+			font-size: 7px !important;
+		}
+	}
+}
+
+.product__detail {
+	display: none;
 }

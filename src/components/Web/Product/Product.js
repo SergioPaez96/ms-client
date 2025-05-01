@@ -13,12 +13,29 @@ export function Product(props) {
 			<div className="product__info">
 				<h3> {product.title} </h3>
 				<p>{product.description}</p>
-				<Button as="a" href={product.url} primary fluid target="_blank">
+				{/* <Button
+					as="a"
+					href={product.url}
+					primary
+					fluid
+					target="_blank"
+					onClick={() => console.log("Añadir al carito")}>
+					AÑADIR AL CARRITO <Icon name="cart" />
+				</Button> */}
+				<Button
+					as="a"
+					href={`/productos/${product._id}`}
+					primary
+					fluid
+					target="_blank"
+					onClick={() => console.log("ID: " + product._id)}>
 					AÑADIR AL CARRITO <Icon name="cart" />
 				</Button>
 
 				<div className="product__info-footer">
-					<span>{product.price} Gs.</span>
+					<span className="product__info-footer__price">
+						{product.price} Gs.
+					</span>
 					<Rating
 						icon="star"
 						defaultRating={product.score}
